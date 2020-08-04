@@ -1,5 +1,7 @@
 package com.example.demo.Booking;
 
+import com.example.demo.Cat;
+import com.example.demo.Pet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -25,6 +27,8 @@ public class DataBaseSeeder implements CommandLineRunner {
         bookings.add(new HotelBooking("Novotel", 140.74, 1));
 
         bookingRepository.saveAll(bookings);
+
+
 
     }
 }
